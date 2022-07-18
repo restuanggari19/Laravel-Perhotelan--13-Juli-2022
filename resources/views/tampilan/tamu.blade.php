@@ -4,18 +4,18 @@
 <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
 
   <div class="card">
-    <div class="card-header fs-2 text-center">Data Tamu 
-    <a href="/form-input" class="btn btn-primary float-end">Tambah Tamu</a>
+    <div class="card-header fs-2 text-center">Data Pesanan Tamu 
+    <a href="/form-tamu" class="btn btn-primary float-end">Tambah Tamu</a>
     </div>
     <div class="card-body">
       <table class="table datatable" id="tamu">
         <thead>
           <tr>
             <th scope="col">ID</th>
-            <th scope="col">Nama Tamu</th>
-            <th scope="col">Jenis Kelamin</th>
-            <th scope="col">No Handphone</th>
-            <th scope="col">Email</th>
+            <th scope="col">Nama</th>
+            <th scope="col">Jenis_kelamin</th>
+            <th scope="col">No Telepon</th>
+            <th scope="col">Alamat</th>
             <th scope="col">Action</th>
           </tr>
         </thead>

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateTamuHotelsTable extends Migration
+class CreateTamusTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,15 +13,12 @@ class CreateTamuHotelsTable extends Migration
      */
     public function up()
     {
-        Schema::create('tamu_hotels', function (Blueprint $table) {
+        Schema::create('tamus', function (Blueprint $table) {
             $table->id();
             $table->string('nama_tamu');
             $table->string('jenis_kelamin');
-            $table->string('nama_kamar');
-            $table->integer('no_kamar');
-            $table->string('fasilitas');
-            $table->bigInteger('no_handphone');
-            $table->string('email');
+            $table->string('alamat');
+            $table->bigInteger('no_telepon');
             $table->timestamps();
         });
     }
@@ -33,6 +30,6 @@ class CreateTamuHotelsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('tamu_hotels');
+        Schema::dropIfExists('tamus');
     }
 }

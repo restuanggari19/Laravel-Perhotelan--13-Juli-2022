@@ -4,17 +4,16 @@
 <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
 
   <div class="card">
-    <div class="card-header fs-2 text-center">Data Pesan 
+    <div class="card-header fs-2 text-center">Data Pesanan Fasilitas 
+    <a href="/form-fasilitas" class="btn btn-primary float-end">Tambah Fasilitas</a>
     </div>
     <div class="card-body">
-      <table class="table datatable" id="tamu">
+      <table class="table datatable" id="fasilitas">
         <thead>
           <tr>
             <th scope="col">ID</th>
-            <th scope="col">Nama Tamu</th>
-            <th scope="col">Nama Kamar</th>
-            <th scope="col">No Kamar</th>
-            <th scope="col">Fasilitas</th>
+            <th scope="col">Nama Fasilitas</th>
+            <th scope="col">Harga</th>
             <th scope="col">Action</th>
           </tr>
         </thead>
@@ -29,8 +28,8 @@
 	<script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
   
   <script>
-    $('#tamu').DataTable({
-      'ajax': '/datapesan/pesan'
+    $('#fasilitas').DataTable({
+      'ajax': '/datatable/fasilitas',
     })
   </script>
 @endsection

@@ -6,6 +6,7 @@
         <form method="POST" action="/update">
             @csrf
         <div class="mb-3">
+        <input type="hidden" class="form-control" id="exampleInputEmail1" name="id" aria-describedby="emailHelp" value="{{ $tamu_hotel->id }}">
           <label type="hidden" for="exampleInputEmail1">Nama Tamu</label>
           <input type="text" class="form-control" id="exampleInputEmail1" name="nama_tamu" placeholder="Masukan Nama Anda" aria-describedby="emailHelp">
         </div>
